@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+
+  <!-- Importing AngularJS -->
+  <script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.19/angular-ui-router.min.js"></script>
+
+  <!-- Importing custom scripts -->
+  <script src="menuapp.module.js"></script>
+  <script src="routes.js"></script>
+  <script src="data.module.js"></script>
+  <script src="menudata.service.js"></script>
+  <script src="categories.component.js"></script>
+  <script src="items.component.js"></script>
+
+  <link rel="stylesheet" href="styles.css"> <!-- Optional, your own styles -->
+
+</head>
+<body ng-app="MenuApp">
+  <!-- Main container for the app -->
+  <div ui-view></div>
+</body>
+</html>
