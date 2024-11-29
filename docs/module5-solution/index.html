@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="restaurantApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Sign Up</title>
+  <script src="angular.min.js"></script>
+</head>
+<body ng-controller="MainController">
+
+  <!-- Navigation Bar -->
+  <div>
+    <button ng-click="goToSignUp()">Sign Up</button>
+    <button ng-click="goToMyInfo()">My Info</button>
+  </div>
+
+  <!-- Views -->
+  <div ng-view></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

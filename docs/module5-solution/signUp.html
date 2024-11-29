@@ -1,0 +1,21 @@
+<form name="signUpForm" ng-submit="submitForm()">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" ng-model="user.firstName" required /><br>
+  
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" ng-model="user.lastName" required /><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" ng-model="user.email" required /><br>
+  
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" ng-model="user.phone" required /><br>
+  
+    <label for="favoriteDish">Favorite Dish (Menu Number):</label>
+    <input type="text" id="favoriteDish" ng-model="user.favoriteDish" required /><br>
+  
+    <button type="submit" ng-disabled="signUpForm.$invalid">Submit</button>
+    <p ng-if="errorMessage" style="color: red;">{{ errorMessage }}</p>
+    <p ng-if="successMessage" style="color: green;">{{ successMessage }}</p>
+  </form>
+  
